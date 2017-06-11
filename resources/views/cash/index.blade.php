@@ -38,7 +38,7 @@
           <td>{{ $cash->amount }}</td>
           <td>{{ $cash->transferStatus }}</td>
         </tr>
-        @endforeach                            
+        @endforeach                          
       </table>      
   </div>
 @endsection

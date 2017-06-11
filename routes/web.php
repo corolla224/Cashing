@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('/cash', 'CashController@index');
 Route::get('/cash/create', 'CashController@create');
+Route::post('/cash', 'CashController@store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

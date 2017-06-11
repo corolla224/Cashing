@@ -22,3 +22,22 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Cash::class, function (Faker\Generator $faker) {
+
+    return [
+        'method' => $faker->title,
+        'fromBank' => $faker->name,
+        'fromAccountNumber'=> $faker->sentence,
+        'fromAccountName' => $faker->name,
+        'transferDate' => $faker->date,
+        'transferTime' => $faker->time,
+        'toBank' => $faker->name,
+        'toAccountNumber' => $faker->sentence,
+        'toAccountName' => $faker->name,
+        'amount' => $faker->sentence,
+        'transferStatus' => $faker->sentence,
+        
+    ];
+});
+			
