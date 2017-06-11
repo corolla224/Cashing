@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cash', 'CashController@index');
+Route::get('/cash/create', 'CashController@create');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
