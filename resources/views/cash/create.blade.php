@@ -3,12 +3,11 @@
 @section('content')
   <div class="container">
       <h1>My Create</h1>
-
       <form method="post" action="/cash">
         {{ csrf_field() }}
         <div class="form-group">
             <label for="method">วิธีการโอน</label>
-            <input type="text" class="form-control" name="method" id="method" placeholder="ATM, Internet Banking">
+            <input type="text" class="form-control" name="method" id="method" placeholder="ATM, InternetBanking">
         </div>
         <div class="form-group">
             <label for="fromBank">โอนจากธนาคาร</label>
