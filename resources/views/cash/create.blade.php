@@ -6,8 +6,8 @@
       <form method="post" action="/cash">
         {{ csrf_field() }}
         <div class="form-group">
-            <label for="method">วิธีการโอน</label>
-            <input type="text" class="form-control" name="method" id="method" placeholder="ATM, InternetBanking">
+            <label for="bank">วิธีการโอน</label>
+            <input type="text" class="form-control" name="bank" id="bank" placeholder="ATM, InternetBanking">
         </div>
         <div class="form-group">
             <label for="fromBank">โอนจากธนาคาร</label>
@@ -19,20 +19,20 @@
         </div>
         <div class="form-group">
             <label for="fromAccountName">โอนจากชื่อบัญชี</label>
-            <input type="text" class="form-control" name="fromAccountNumber" id="fromAccountNumber" placeholder="AccountName">
-        </div>               
-        <div class="form-group">
-            <label for="dateadd">Date</label>
-            <input class="form-control" type="text" id="datepicker" placeholder="date">
+            <input type="text" class="form-control" name="fromAccountName" id="fromAccountName" placeholder="fromAccountName">
         </div>
         <div class="form-group">
-            <label for="transferTime">เวลาโอน</label>
-            <input class="form-control" type="text" id="transferTime" placeholder="Time">
+            <label for="dateadd">วันที่โอน</label>
+            <input type="text" class="form-control" name="dateadd" id="dateadd" placeholder="dateadd">
+        </div>
+        <!--<div class="form-group">
+            <label for="Timeadd">เวลาโอน</label>
+            <input class="form-control" type="text" id="Timeadd" placeholder="Timeadd">
         </div>
         <div class="form-group">
-            <label for="toBank">โอนเข้าธนาคาร</label>
-            <input class="form-control" type="text" id="toBank" placeholder="infoBank">
-        </div>
+            <label for="tobank">่โอนเข้าธนาคาร</label>
+            <input type="text" class="form-control" name="tobank" id="tobank" placeholder="tobank">
+        </div>-->
         <div class="form-group">
             <label for="toAccountNumber">โอนเข้าเลขบัญชี</label>
             <input class="form-control" type="text" id="toAccountNumber" placeholder="infoNumber">

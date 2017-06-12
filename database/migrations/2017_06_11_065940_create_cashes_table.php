@@ -15,18 +15,17 @@ class CreateCashesTable extends Migration
     {
         Schema::create('cashes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('method');
+            $table->string('bank');
             $table->string('fromBank');
-            $table->integer('fromAccountNumber');
+            $table->string('fromAccountNumber');
             $table->string('fromAccountName');
-            $table->date('transferDate');
-            $table->time('transferTime');
-            $table->string('toBank');
-            $table->integer('toAccountNumber');
+            $table->date('dateadd');
+            //$table->time('Timeadd');
+            //$table->string('toBank');
+            $table->string('toAccountNumber');
             $table->string('toAccountName');
-            $table->float('amount');
+            $table->string('amount');
             $table->string('transferStatus');
-            $table->rememberToken();
             $table->timestamps();
         });
     }

@@ -26,19 +26,19 @@
         @foreach($cashes as $cash)
         <tr>
           <td>{{ $cash->id }}</td>
-          <td>{{ $cash->method }}</td>
+          <td>{{ $cash->bank }}</td>
           <td>{{ $cash->fromBank }}</td>
           <td>{{ $cash->fromAccountNumber }}</td>
           <td>{{ $cash->fromAccountName }}</td>
-          <td>{{ $cash->transferDate }}</td>
-          <td>{{ $cash->transferTime }}</td>
-          <td>{{ $cash->toBank }}</td>
+          <td>{{ $cash->dateadd }}</td>
+          <!--<td>{{ $cash->Timeadd }}</td>
+          <td>{{ $cash->toBank }}</td>-->
           <td>{{ $cash->toAccountNumber }}</td>
           <td>{{ $cash->toAccountName }}</td>
           <td>{{ $cash->amount }}</td>
           <td>{{ $cash->transferStatus }}</td>
         </tr>
-        @endforeach                          
-      </table>      
+        @endforeach
+      </table>
   </div>
 @endsection
